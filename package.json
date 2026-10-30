@@ -2,22 +2,42 @@
   "name": "omarchy-opencode-theme",
   "version": "0.1.0",
   "description": "Themes the OpenCode desktop app with the current Omarchy theme",
-  "type": "module",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "omarchy",
+    "theme",
+    "hyprland"
+  ],
+  "homepage": "https://github.com/wmfeht/omarchy-opencode-theme#readme",
+  "bugs": "https://github.com/wmfeht/omarchy-opencode-theme/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmfeht/omarchy-opencode-theme.git"
+  },
   "license": "MIT",
+  "author": "William Feht",
+  "type": "module",
+  "files": [
+    "dist",
+    "THIRD_PARTY_LICENSES",
+    "CHANGELOG.md"
+  ],
   "exports": {
     "./gui-experimental": "./dist/gui-experimental.cjs"
   },
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run build"
   },
   "dependencies": {
     "@opencode/plugin": "2.2.4"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
-    "electron": "*",
+    "electron": "^44.0.0",
     "lucide": "^1.65.0",
     "solid-js": "^1.9.0",
     "typescript": "^5.9.0",
