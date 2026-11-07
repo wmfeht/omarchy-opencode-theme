@@ -57,9 +57,11 @@ export const chrome: Layer = (theme) => {
   --icon-weak-base: ${alpha("accent", 0.8)};
   --icon-weak-hover: var(--strata-accent);
 
-  /* Buttons: secondary is a transparent box with a 0.54 line; primary is an accent tint inside an accent line. */
+  /* Buttons and fields: a transparent box with a 0.54 line; primary is an accent tint inside an accent line.
+     Text inputs, textareas and selects take --v2-elevation-input. */
   --v2-background-bg-button-neutral: transparent;
   --v2-elevation-button-neutral: inset 0 0 0 1px ${alpha("border", 0.54)};
+  --v2-elevation-input: inset 0 0 0 1px ${alpha("border", 0.54)};
   --v2-elevation-button-contrast: inset 0 0 0 1px var(--strata-accent);
 
   /* Elevation: a 1px outline instead of a drop shadow (Strata with Element glow off). */
