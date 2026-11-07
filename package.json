@@ -1,6 +1,6 @@
 {
   "name": "omarchy-opencode-theme",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Themes the OpenCode desktop app with the current Omarchy theme",
   "keywords": [
     "opencode",
@@ -33,7 +33,7 @@
     "prepublishOnly": "npm run typecheck && npm run build"
   },
   "dependencies": {
-    "@opencode/plugin": "2.2.4"
+    "@opencode/plugin": "2.2.6"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
