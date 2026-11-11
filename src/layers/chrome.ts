@@ -10,7 +10,10 @@ export const chrome: Layer = (theme) => {
   const s = scope(theme)
   const line = `0 0 0 1px ${alpha("border", 0.6)}`
   const primary = `:is([data-component=button-v2], [data-component=icon-button-v2]):is([data-variant=contrast], [data-variant=submit])`
-  const field = `:is([data-component=text-input-v2], [data-component=textarea-v2], [data-component=select-v2])`
+  // Question-dock custom answers are this same text input, but OpenCode 2.2.7 draws them borderless on the option
+  // (question-prompt.css, in @layer components). These rules are unlayered, so they would paint a background and a
+  // hover line over that field. Inline renames are [data-component=inline-input] and are not matched here.
+  const field = `:is([data-component=text-input-v2], [data-component=textarea-v2], [data-component=select-v2]):not(.question-custom-field)`
 
   return `${s} {
   /* Lines: structural 0.6, internal dividers 0.28, form controls 0.54, focus accent. */
