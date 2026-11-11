@@ -26,7 +26,7 @@ Desktop loads GUI plugins only from the global config, not from a project's.
 }
 ```
 
-Pin a version with `"omarchy-opencode-theme@0.1.3"`. Config changes apply without a restart.
+Pin a version with `"omarchy-opencode-theme@0.1.2"`. Config changes apply without a restart.
 
 Update with `opencode plugin update`. Remove with `opencode plugin remove omarchy-opencode-theme`, or delete the entry.
 
