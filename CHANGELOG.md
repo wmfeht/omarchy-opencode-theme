@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-11-26
+
+### Fixed
+
+- The inbox pin mark is drawn with Lucide. OpenCode 2.4.2 adds a `pin` icon on pinned sessions, and that name was missing from the sprite map, so the mark kept OpenCode's artwork.
+
 ## [0.1.2] - 2026-11-10
 
 ### Changed
@@ -50,7 +56,8 @@ First release. Targets OpenCode Desktop 2.2.4 on Linux.
     shadows.
 - Logs `omarchy theme loaded`, `omarchy theme unreadable` and `cannot watch omarchy theme` to the OpenCode log.
 
-[Unreleased]: https://github.com/wmfeht/omarchy-opencode-theme/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/wmfeht/omarchy-opencode-theme/compare/v0.1.3...HEAD
+[0.1.3]: https://github.com/wmfeht/omarchy-opencode-theme/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/wmfeht/omarchy-opencode-theme/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/wmfeht/omarchy-opencode-theme/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/wmfeht/omarchy-opencode-theme/releases/tag/v0.1.0
